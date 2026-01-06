@@ -192,9 +192,9 @@
     &quot;group&quot; : {
       &quot;operator&quot; : &quot;AND&quot;,
       &quot;rules&quot; : [ {
-        &quot;data&quot; : null,
-        &quot;condition&quot; : &quot;is not empty&quot;,
-        &quot;field&quot; : &quot;AccountName&quot;
+        &quot;data&quot; : &quot;Found&quot;,
+        &quot;condition&quot; : &quot;=&quot;,
+        &quot;field&quot; : &quot;SearchStatus&quot;
       } ]
     }
   }
@@ -216,9 +216,9 @@
     &quot;group&quot; : {
       &quot;operator&quot; : &quot;AND&quot;,
       &quot;rules&quot; : [ {
-        &quot;data&quot; : null,
-        &quot;condition&quot; : &quot;is empty&quot;,
-        &quot;field&quot; : &quot;AccountName&quot;
+        &quot;data&quot; : &quot;Account Not Found&quot;,
+        &quot;condition&quot; : &quot;=&quot;,
+        &quot;field&quot; : &quot;SearchStatus&quot;
       } ]
     }
   },
@@ -369,9 +369,9 @@
     &quot;group&quot; : {
       &quot;operator&quot; : &quot;AND&quot;,
       &quot;rules&quot; : [ {
-        &quot;data&quot; : null,
-        &quot;condition&quot; : &quot;&lt;&gt;&quot;,
-        &quot;field&quot; : &quot;ContactDetailsBlock&quot;
+        &quot;data&quot; : &quot;Contact Linked&quot;,
+        &quot;condition&quot; : &quot;=&quot;,
+        &quot;field&quot; : &quot;ContactDetailsStep:ContactStatus&quot;
       } ]
     }
   },
@@ -397,7 +397,17 @@
   &quot;HTMLTemplateId&quot; : &quot;&quot;,
   &quot;dataJSON&quot; : false,
   &quot;textKey&quot; : &quot;&quot;,
-  &quot;sanitize&quot; : false
+  &quot;sanitize&quot; : false,
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;data&quot; : &quot;No Contact Found for this Account&quot;,
+        &quot;condition&quot; : &quot;=&quot;,
+        &quot;field&quot; : &quot;ContactDetailsStep:ContactStatus&quot;
+      } ]
+    }
+  }
 }</propertySetConfig>
             <sequenceNumber>0.0</sequenceNumber>
             <type>Text Block</type>
@@ -598,9 +608,9 @@
     &quot;group&quot; : {
       &quot;operator&quot; : &quot;AND&quot;,
       &quot;rules&quot; : [ {
-        &quot;data&quot; : null,
-        &quot;condition&quot; : &quot;&lt;&gt;&quot;,
-        &quot;field&quot; : &quot;Type&quot;
+        &quot;data&quot; : &quot;Opportunity Found&quot;,
+        &quot;condition&quot; : &quot;=&quot;,
+        &quot;field&quot; : &quot;OpportunityDetailsStep:OpportunityStatus&quot;
       } ]
     }
   }
@@ -621,7 +631,17 @@
   &quot;HTMLTemplateId&quot; : &quot;&quot;,
   &quot;dataJSON&quot; : false,
   &quot;textKey&quot; : &quot;&quot;,
-  &quot;sanitize&quot; : false
+  &quot;sanitize&quot; : false,
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;data&quot; : &quot;No Opportunity Found for this Account&quot;,
+        &quot;condition&quot; : &quot;=&quot;,
+        &quot;field&quot; : &quot;OpportunityDetailsStep:OpportunityStatus&quot;
+      } ]
+    }
+  }
 }</propertySetConfig>
             <sequenceNumber>0.0</sequenceNumber>
             <type>Text Block</type>

@@ -27,38 +27,8 @@
     <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
-        <globalKey>0e53162c-116d-4621-a34c-260d6e524510</globalKey>
-        <inputFieldName>Phone</inputFieldName>
-        <inputObjectName>Account</inputObjectName>
-        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
-        <linkedObjectSequence>0.0</linkedObjectSequence>
-        <name>FetchAccDetails</name>
-        <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>AccountDetails</outputFieldName>
-        <outputObjectName>Turbo Extract</outputObjectName>
-        <requiredForUpsert>false</requiredForUpsert>
-        <upsertKey>false</upsertKey>
-    </omniDataTransformItem>
-    <omniDataTransformItem>
-        <disabled>false</disabled>
-        <filterGroup>0.0</filterGroup>
-        <globalKey>da6e71fe-1265-42ce-83f8-e5706fdb7fe1</globalKey>
-        <inputFieldName>AccountNumber</inputFieldName>
-        <inputObjectName>Account</inputObjectName>
-        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
-        <linkedObjectSequence>0.0</linkedObjectSequence>
-        <name>FetchAccDetails</name>
-        <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>AccountDetails</outputFieldName>
-        <outputObjectName>Turbo Extract</outputObjectName>
-        <requiredForUpsert>false</requiredForUpsert>
-        <upsertKey>false</upsertKey>
-    </omniDataTransformItem>
-    <omniDataTransformItem>
-        <disabled>false</disabled>
-        <filterGroup>0.0</filterGroup>
-        <globalKey>cae7688d-ec54-4ced-a9bf-736f1176eb47</globalKey>
-        <inputFieldName>BillingCity</inputFieldName>
+        <globalKey>db0a6583-494c-4ebc-91db-f7d6d44e8638</globalKey>
+        <inputFieldName>Name</inputFieldName>
         <inputObjectName>Account</inputObjectName>
         <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
         <linkedObjectSequence>0.0</linkedObjectSequence>
@@ -90,8 +60,38 @@
     <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
-        <globalKey>db0a6583-494c-4ebc-91db-f7d6d44e8638</globalKey>
-        <inputFieldName>Name</inputFieldName>
+        <globalKey>cae7688d-ec54-4ced-a9bf-736f1176eb47</globalKey>
+        <inputFieldName>BillingCity</inputFieldName>
+        <inputObjectName>Account</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FetchAccDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AccountDetails</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>da6e71fe-1265-42ce-83f8-e5706fdb7fe1</globalKey>
+        <inputFieldName>AccountNumber</inputFieldName>
+        <inputObjectName>Account</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FetchAccDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AccountDetails</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>0e53162c-116d-4621-a34c-260d6e524510</globalKey>
+        <inputFieldName>Phone</inputFieldName>
         <inputObjectName>Account</inputObjectName>
         <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
         <linkedObjectSequence>0.0</linkedObjectSequence>
