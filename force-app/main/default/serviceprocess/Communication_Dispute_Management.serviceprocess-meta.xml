@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <processLabel>Communication Dispute Management</processLabel>
+    <serviceProcessAttributes>
+        <attributeType>Base</attributeType>
+        <baseObjectApiName>Dispute</baseObjectApiName>
+        <dataType>Text</dataType>
+        <developerName>description</developerName>
+        <fieldIdentifier>Description</fieldIdentifier>
+        <groupApiName>section_2</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Description</label>
+        <sortOrder>2</sortOrder>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Base</attributeType>
+        <baseObjectApiName>Dispute</baseObjectApiName>
+        <dataType>Date</dataType>
+        <developerName>received_date</developerName>
+        <fieldIdentifier>ReceivedDate</fieldIdentifier>
+        <groupApiName>section_2</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>true</isRequired>
+        <label>Received Date</label>
+        <sortOrder>9</sortOrder>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Base</attributeType>
+        <baseObjectApiName>Dispute</baseObjectApiName>
+        <dataType>Lookup</dataType>
+        <developerName>case_id</developerName>
+        <fieldIdentifier>CaseId</fieldIdentifier>
+        <groupApiName>section_2</groupApiName>
+        <isAttrValueDerivAtRuntime>true</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Case Id</label>
+        <referenceObjectApiName>Case</referenceObjectApiName>
+        <sortOrder>1</sortOrder>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Base</attributeType>
+        <baseObjectApiName>Dispute</baseObjectApiName>
+        <dataType>Text</dataType>
+        <developerName>status</developerName>
+        <fieldIdentifier>Status</fieldIdentifier>
+        <groupApiName>section_2</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Status</label>
+        <sortOrder>8</sortOrder>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Base</attributeType>
+        <dataType>ListOfMaps</dataType>
+        <developerName>disputed_transactions_info</developerName>
+        <groupApiName>section_5</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Disputed Transactions Info</label>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Base</attributeType>
+        <baseObjectApiName>Dispute</baseObjectApiName>
+        <dataType>Text</dataType>
+        <developerName>dispute_type</developerName>
+        <fieldIdentifier>DisputeType</fieldIdentifier>
+        <groupApiName>section_2</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Dispute Type</label>
+        <sortOrder>3</sortOrder>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Base</attributeType>
+        <baseObjectApiName>Dispute</baseObjectApiName>
+        <dataType>Text</dataType>
+        <developerName>dispute_reason</developerName>
+        <fieldIdentifier>DisputeSubtype</fieldIdentifier>
+        <groupApiName>section_2</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Dispute Reason</label>
+        <sortOrder>4</sortOrder>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Base</attributeType>
+        <baseObjectApiName>Dispute</baseObjectApiName>
+        <dataType>Lookup</dataType>
+        <developerName>account_id</developerName>
+        <fieldIdentifier>AccountId</fieldIdentifier>
+        <groupApiName>section_2</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Account Id</label>
+        <sortOrder>7</sortOrder>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Base</attributeType>
+        <baseObjectApiName>Dispute</baseObjectApiName>
+        <dataType>Currency</dataType>
+        <developerName>actual_amount</developerName>
+        <fieldIdentifier>ActualAmount</fieldIdentifier>
+        <groupApiName>section_2</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Actual Amount</label>
+        <sortOrder>5</sortOrder>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Base</attributeType>
+        <baseObjectApiName>Dispute</baseObjectApiName>
+        <dataType>Currency</dataType>
+        <developerName>disputed_amount</developerName>
+        <fieldIdentifier>DisputedAmount</fieldIdentifier>
+        <groupApiName>section_2</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Disputed Amount</label>
+        <sortOrder>6</sortOrder>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Base</attributeType>
+        <baseObjectApiName>DisputeItem</baseObjectApiName>
+        <dataType>Lookup</dataType>
+        <developerName>dispute_id</developerName>
+        <fieldIdentifier>DisputeId</fieldIdentifier>
+        <groupApiName>section_5</groupApiName>
+        <isAttrValueDerivAtRuntime>true</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Dispute Id</label>
+        <parentAttribute>disputed_transactions_info</parentAttribute>
+        <referenceObjectApiName>Dispute</referenceObjectApiName>
+        <sortOrder>1</sortOrder>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Base</attributeType>
+        <baseObjectApiName>DisputeItem</baseObjectApiName>
+        <dataType>Currency</dataType>
+        <developerName>transaction_amount</developerName>
+        <fieldIdentifier>TransactionAmount</fieldIdentifier>
+        <groupApiName>section_5</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Transaction Amount</label>
+        <parentAttribute>disputed_transactions_info</parentAttribute>
+        <sortOrder>3</sortOrder>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Base</attributeType>
+        <baseObjectApiName>DisputeItem</baseObjectApiName>
+        <dataType>Currency</dataType>
+        <developerName>transaction_disputed_amount</developerName>
+        <fieldIdentifier>DisputedAmount</fieldIdentifier>
+        <groupApiName>section_5</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Transaction Disputed Amount</label>
+        <parentAttribute>disputed_transactions_info</parentAttribute>
+        <sortOrder>4</sortOrder>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Base</attributeType>
+        <baseObjectApiName>DisputeItem</baseObjectApiName>
+        <dataType>Text</dataType>
+        <developerName>transaction_identifier</developerName>
+        <fieldIdentifier>TransactionIdentifier</fieldIdentifier>
+        <groupApiName>section_5</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Transaction Identifier</label>
+        <parentAttribute>disputed_transactions_info</parentAttribute>
+        <sortOrder>5</sortOrder>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Base</attributeType>
+        <baseObjectApiName>DisputeItem</baseObjectApiName>
+        <dataType>Text</dataType>
+        <developerName>validation_outcome</developerName>
+        <fieldIdentifier>ValidationOutcome</fieldIdentifier>
+        <groupApiName>section_5</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Validation Outcome</label>
+        <parentAttribute>disputed_transactions_info</parentAttribute>
+        <sortOrder>6</sortOrder>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Base</attributeType>
+        <baseObjectApiName>DisputeItem</baseObjectApiName>
+        <dataType>Date</dataType>
+        <description>kdj kjek ken ked lwekd</description>
+        <developerName>transaction_date</developerName>
+        <fieldIdentifier>TransactionDate</fieldIdentifier>
+        <groupApiName>section_5</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Transaction Date</label>
+        <parentAttribute>disputed_transactions_info</parentAttribute>
+        <sortOrder>8</sortOrder>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Base</attributeType>
+        <baseObjectApiName>DisputeItem</baseObjectApiName>
+        <dataType>Text</dataType>
+        <developerName>validation_outcome_reason</developerName>
+        <fieldIdentifier>ValidationOutcomeReason</fieldIdentifier>
+        <groupApiName>section_5</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Validation Outcome Reason</label>
+        <parentAttribute>disputed_transactions_info</parentAttribute>
+        <sortOrder>7</sortOrder>
+    </serviceProcessAttributes>
+    <serviceProcessAttributes>
+        <attributeType>Base</attributeType>
+        <baseObjectApiName>DisputeItem</baseObjectApiName>
+        <dataType>Text</dataType>
+        <developerName>transaction_product</developerName>
+        <fieldIdentifier>TransactionDescription</fieldIdentifier>
+        <groupApiName>section_5</groupApiName>
+        <isAttrValueDerivAtRuntime>false</isAttrValueDerivAtRuntime>
+        <isRequired>false</isRequired>
+        <label>Transaction Product</label>
+        <parentAttribute>disputed_transactions_info</parentAttribute>
+        <sortOrder>2</sortOrder>
+    </serviceProcessAttributes>
+    <serviceProcessItemGroups>
+        <apiName>section_2</apiName>
+        <groupName>Dispute Details</groupName>
+        <sortOrder>2</sortOrder>
+    </serviceProcessItemGroups>
+    <serviceProcessItemGroups>
+        <apiName>section_5</apiName>
+        <groupName>Disputed Transaction Details</groupName>
+        <sortOrder>5</sortOrder>
+    </serviceProcessItemGroups>
+    <shortDescription>Report a dispute for selected charges from Comms Dispute Management</shortDescription>
+    <shouldHideEmptyAttributes>false</shouldHideEmptyAttributes>
+    <usageType>Industry</usageType>
+</ServiceProcess>

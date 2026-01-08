@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProductDiscoverySettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <discoverProductsFlowNameOrgValue>runtime_industries_comms__ComProdDcvry</discoverProductsFlowNameOrgValue>
+    <prodDiscBrowseContextDefOrgValue>CommsProductDiscoveryContext__stdctx</prodDiscBrowseContextDefOrgValue>
+    <prodDiscPricingEnabledOrgValue>true</prodDiscPricingEnabledOrgValue>
+    <prodDiscProcedureOrgValue>Product Discovery Pricing Procedure</prodDiscProcedureOrgValue>
+    <prodDiscQualEnabledOrgValue>false</prodDiscQualEnabledOrgValue>
+</ProductDiscoverySettings>
