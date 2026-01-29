@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;DataMapperTurboAction1&quot; : { },
+  &quot;timeStamp&quot; : null,
+  &quot;vlcTimeTracking&quot; : {
+    &quot;DataMapperTurboAction1&quot; : null,
+    &quot;Step1&quot; : null,
+    &quot;OtherDetails&quot; : null,
+    &quot;DataMapperTransformAction1&quot; : null
+  },
+  &quot;Step1&quot; : {
+    &quot;searchcontacthere&quot; : null
+  },
+  &quot;OtherDetails&quot; : {
+    &quot;country&quot; : null,
+    &quot;firstname&quot; : null,
+    &quot;city&quot; : null,
+    &quot;postalcode&quot; : null,
+    &quot;street&quot; : null,
+    &quot;state&quot; : null,
+    &quot;lastname&quot; : null
+  },
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;ContextId&quot; : null,
+  &quot;DataMapperTransformAction1&quot; : { },
+  &quot;userName&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userTimeZone&quot; : null
+}</expectedInputJson>
+    <expectedOutputJson>{
+  &quot;OtherDetails&quot; : [ {
+    &quot;OtherCity&quot; : &quot;New York City&quot;,
+    &quot;FirstName&quot; : &quot;Edward&quot;,
+    &quot;OtherPostalCode&quot; : &quot;31349&quot;,
+    &quot;OtherCountry&quot; : &quot;USA&quot;,
+    &quot;Id&quot; : &quot;003f6000004oYPEAA2&quot;,
+    &quot;LastName&quot; : &quot;Stamos&quot;,
+    &quot;OtherStreet&quot; : &quot;10 Main Rd.&quot;,
+    &quot;OtherState&quot; : &quot;NY&quot;
+  } ]
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>getContactArrayToObjectTransform</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>586edad5-a777-42db-aa4f-b68e39be25bd</globalKey>
+        <inputFieldName>OtherDetails:OtherCity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>getContactArrayToObjectTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>OtherDetails:city</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>70416140-2a61-4a6d-b3ee-88b8eefc1b3e</globalKey>
+        <inputFieldName>OtherDetails:OtherPostalCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>getContactArrayToObjectTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>OtherDetails:postalcode</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>23744f09-c12e-42a7-ae4e-80ff68ffc6ab</globalKey>
+        <inputFieldName>OtherDetails:OtherState</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>getContactArrayToObjectTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>OtherDetails:state</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>bd5ac22f-ef24-479d-921f-65db8038982a</globalKey>
+        <inputFieldName>OtherDetails:OtherStreet</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>getContactArrayToObjectTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>OtherDetails:street</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>16189ea7-d94c-44d4-871c-be1775ef5afd</globalKey>
+        <inputFieldName>OtherDetails:OtherCountry</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>getContactArrayToObjectTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>OtherDetails:country</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>8bfb0470-1134-4274-85c6-729aac674feb</globalKey>
+        <inputFieldName>OtherDetails:FirstName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>getContactArrayToObjectTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>OtherDetails:firstname</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>12ad8e6c-39fd-4d86-9ebe-48958fe2e464</globalKey>
+        <inputFieldName>OtherDetails:LastName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>getContactArrayToObjectTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>OtherDetails:lastname</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>e6f34f11-0cfb-4421-944f-89d3c5d5ed5b</globalKey>
+        <inputFieldName>OtherDetails:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>getContactArrayToObjectTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>OtherDetails:Id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;OtherDetails&quot; : [ {
+    &quot;OtherCity&quot; : &quot;Toronto&quot;,
+    &quot;FirstName&quot; : &quot;Geoff&quot;,
+    &quot;OtherPostalCode&quot; : &quot;L4B 1Y3&quot;,
+    &quot;OtherCountry&quot; : &quot;Canada&quot;,
+    &quot;Id&quot; : &quot;003f6000004oYPBAA2&quot;,
+    &quot;LastName&quot; : &quot;Minor&quot;,
+    &quot;OtherStreet&quot; : &quot;150 Chestnut Street&quot;,
+    &quot;OtherState&quot; : &quot;Ontario&quot;
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>getContactArrayToObjectTransform_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>
