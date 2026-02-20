@@ -27,21 +27,6 @@
     <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
-        <globalKey>b0f77f65-25ff-44aa-a74a-cff935bb07f3</globalKey>
-        <inputFieldName>enrollmentDetail:section</inputFieldName>
-        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
-        <linkedObjectSequence>0.0</linkedObjectSequence>
-        <name>SingleTransformDataTOmultipleObjects</name>
-        <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>classDetails:section</outputFieldName>
-        <outputObjectName>json</outputObjectName>
-        <requiredForUpsert>false</requiredForUpsert>
-        <transformValuesMappings>{ }</transformValuesMappings>
-        <upsertKey>false</upsertKey>
-    </omniDataTransformItem>
-    <omniDataTransformItem>
-        <disabled>false</disabled>
-        <filterGroup>0.0</filterGroup>
         <formulaConverted>var:studentsData|1</formulaConverted>
         <formulaExpression>studentsData|1</formulaExpression>
         <formulaResultPath>StudentFormula_Email</formulaResultPath>
@@ -59,13 +44,13 @@
     <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
-        <globalKey>3ee35df8-8927-4320-b6fb-814914269525</globalKey>
-        <inputFieldName>StudentFormula_name</inputFieldName>
+        <globalKey>b0f77f65-25ff-44aa-a74a-cff935bb07f3</globalKey>
+        <inputFieldName>enrollmentDetail:section</inputFieldName>
         <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
         <linkedObjectSequence>0.0</linkedObjectSequence>
         <name>SingleTransformDataTOmultipleObjects</name>
         <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>Students:name</outputFieldName>
+        <outputFieldName>classDetails:section</outputFieldName>
         <outputObjectName>json</outputObjectName>
         <requiredForUpsert>false</requiredForUpsert>
         <transformValuesMappings>{ }</transformValuesMappings>
@@ -89,13 +74,13 @@
     <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
-        <globalKey>e32ea510-dc8b-48f9-8d92-b72cd7ae1587</globalKey>
-        <inputFieldName>enrollmentDetail:studentId</inputFieldName>
+        <globalKey>3ee35df8-8927-4320-b6fb-814914269525</globalKey>
+        <inputFieldName>StudentFormula_name</inputFieldName>
         <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
         <linkedObjectSequence>0.0</linkedObjectSequence>
         <name>SingleTransformDataTOmultipleObjects</name>
         <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>student:id</outputFieldName>
+        <outputFieldName>Students:name</outputFieldName>
         <outputObjectName>json</outputObjectName>
         <requiredForUpsert>false</requiredForUpsert>
         <transformValuesMappings>{ }</transformValuesMappings>
@@ -111,6 +96,36 @@
         <name>SingleTransformDataTOmultipleObjects</name>
         <outputCreationSequence>1.0</outputCreationSequence>
         <outputFieldName>student:name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>e32ea510-dc8b-48f9-8d92-b72cd7ae1587</globalKey>
+        <inputFieldName>enrollmentDetail:studentId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>SingleTransformDataTOmultipleObjects</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>student:id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>5951e89a-6806-4f61-85d1-615f34a6d3c0</globalKey>
+        <inputFieldName>Location:Address|2</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>SingleTransformDataTOmultipleObjects</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Location:City</outputFieldName>
         <outputObjectName>json</outputObjectName>
         <requiredForUpsert>false</requiredForUpsert>
         <transformValuesMappings>{ }</transformValuesMappings>
@@ -136,13 +151,13 @@
     <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
-        <globalKey>5951e89a-6806-4f61-85d1-615f34a6d3c0</globalKey>
-        <inputFieldName>Location:Address|2</inputFieldName>
+        <globalKey>a564636f-eb26-4ac6-8ff3-a316c1985f34</globalKey>
+        <inputFieldName>enrollmentDetail:guardianName</inputFieldName>
         <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
         <linkedObjectSequence>0.0</linkedObjectSequence>
         <name>SingleTransformDataTOmultipleObjects</name>
         <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>Location:City</outputFieldName>
+        <outputFieldName>student:guardianInfo:guardianName</outputFieldName>
         <outputObjectName>json</outputObjectName>
         <requiredForUpsert>false</requiredForUpsert>
         <transformValuesMappings>{ }</transformValuesMappings>
@@ -166,13 +181,13 @@
     <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
-        <globalKey>a564636f-eb26-4ac6-8ff3-a316c1985f34</globalKey>
-        <inputFieldName>enrollmentDetail:guardianName</inputFieldName>
+        <globalKey>7566fbe0-176f-4ad0-9254-8f2028ac46de</globalKey>
+        <inputFieldName>Location:Address|1</inputFieldName>
         <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
         <linkedObjectSequence>0.0</linkedObjectSequence>
         <name>SingleTransformDataTOmultipleObjects</name>
         <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>student:guardianInfo:guardianName</outputFieldName>
+        <outputFieldName>Location:Street</outputFieldName>
         <outputObjectName>json</outputObjectName>
         <requiredForUpsert>false</requiredForUpsert>
         <transformValuesMappings>{ }</transformValuesMappings>
@@ -196,13 +211,13 @@
     <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
-        <globalKey>7566fbe0-176f-4ad0-9254-8f2028ac46de</globalKey>
-        <inputFieldName>Location:Address|1</inputFieldName>
+        <globalKey>96435bfa-6447-4365-bfd0-90f4f397cfba</globalKey>
+        <inputFieldName>StudentFormula_Email</inputFieldName>
         <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
         <linkedObjectSequence>0.0</linkedObjectSequence>
         <name>SingleTransformDataTOmultipleObjects</name>
         <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>Location:Street</outputFieldName>
+        <outputFieldName>students:email</outputFieldName>
         <outputObjectName>json</outputObjectName>
         <requiredForUpsert>false</requiredForUpsert>
         <transformValuesMappings>{ }</transformValuesMappings>
@@ -228,13 +243,13 @@
     <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
-        <globalKey>96435bfa-6447-4365-bfd0-90f4f397cfba</globalKey>
-        <inputFieldName>StudentFormula_Email</inputFieldName>
+        <globalKey>b995f6b1-e295-4c71-8f54-b3693fb9630a</globalKey>
+        <inputFieldName>Location:Address|5</inputFieldName>
         <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
         <linkedObjectSequence>0.0</linkedObjectSequence>
         <name>SingleTransformDataTOmultipleObjects</name>
         <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>students:email</outputFieldName>
+        <outputFieldName>Location:Country</outputFieldName>
         <outputObjectName>json</outputObjectName>
         <requiredForUpsert>false</requiredForUpsert>
         <transformValuesMappings>{ }</transformValuesMappings>
@@ -258,13 +273,13 @@
     <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
-        <globalKey>b995f6b1-e295-4c71-8f54-b3693fb9630a</globalKey>
-        <inputFieldName>Location:Address|5</inputFieldName>
+        <globalKey>10117539-2417-4cfc-8df8-ffd43b680587</globalKey>
+        <inputFieldName>enrollmentDetail:class</inputFieldName>
         <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
         <linkedObjectSequence>0.0</linkedObjectSequence>
         <name>SingleTransformDataTOmultipleObjects</name>
         <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>Location:Country</outputFieldName>
+        <outputFieldName>classDetails:class</outputFieldName>
         <outputObjectName>json</outputObjectName>
         <requiredForUpsert>false</requiredForUpsert>
         <transformValuesMappings>{ }</transformValuesMappings>
@@ -280,21 +295,6 @@
         <name>SingleTransformDataTOmultipleObjects</name>
         <outputCreationSequence>1.0</outputCreationSequence>
         <outputFieldName>student:guardianInfo:guardianPhone</outputFieldName>
-        <outputObjectName>json</outputObjectName>
-        <requiredForUpsert>false</requiredForUpsert>
-        <transformValuesMappings>{ }</transformValuesMappings>
-        <upsertKey>false</upsertKey>
-    </omniDataTransformItem>
-    <omniDataTransformItem>
-        <disabled>false</disabled>
-        <filterGroup>0.0</filterGroup>
-        <globalKey>10117539-2417-4cfc-8df8-ffd43b680587</globalKey>
-        <inputFieldName>enrollmentDetail:class</inputFieldName>
-        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
-        <linkedObjectSequence>0.0</linkedObjectSequence>
-        <name>SingleTransformDataTOmultipleObjects</name>
-        <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>classDetails:class</outputFieldName>
         <outputObjectName>json</outputObjectName>
         <requiredForUpsert>false</requiredForUpsert>
         <transformValuesMappings>{ }</transformValuesMappings>

@@ -7,178 +7,145 @@
     <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
     <inputType>JSON</inputType>
     <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
-    <name>DRExtractGetProductandPrice</name>
+    <name>getAccDetailsExtract</name>
     <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
     <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
-        <filterOperator>=</filterOperator>
-        <filterValue>ProductId</filterValue>
-        <globalKey>a424378e-755a-4dab-b6cd-69991efd3ebd</globalKey>
-        <inputFieldName>Product2Id</inputFieldName>
-        <inputObjectName>PricebookEntry</inputObjectName>
-        <inputObjectQuerySequence>2.0</inputObjectQuerySequence>
+        <formulaConverted>| var:AccountSearch:BillingStreet &quot;,/\/\/&quot; var:AccountSearch:BillingCity &quot;,/\/\/&quot; var:AccountSearch:BillingState CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(%AccountSearch:BillingStreet%, &quot;, &quot;, %AccountSearch:BillingCity%, &quot;, &quot;, %AccountSearch:BillingState%)</formulaExpression>
+        <formulaResultPath>AccountSearch:FullAddress</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>0bb3229c-d14b-4777-aad5-9b94a0270f9d</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
         <linkedObjectSequence>0.0</linkedObjectSequence>
-        <name>DRExtractGetProductandPrice</name>
+        <name>getAccDetailsExtract</name>
         <outputCreationSequence>0.0</outputCreationSequence>
-        <outputFieldName>Price</outputFieldName>
-        <outputObjectName>json</outputObjectName>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
         <requiredForUpsert>false</requiredForUpsert>
         <upsertKey>false</upsertKey>
     </omniDataTransformItem>
     <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
-        <filterOperator>=</filterOperator>
-        <filterValue>ProductId</filterValue>
-        <globalKey>ec93bc73-5705-498e-9810-c2c367a74717</globalKey>
-        <inputFieldName>LinkedEntityId</inputFieldName>
-        <inputObjectName>ContentDocumentLink</inputObjectName>
-        <inputObjectQuerySequence>3.0</inputObjectQuerySequence>
-        <linkedObjectSequence>0.0</linkedObjectSequence>
-        <name>DRExtractGetProductandPrice</name>
-        <outputCreationSequence>0.0</outputCreationSequence>
-        <outputFieldName>Attachment</outputFieldName>
-        <outputObjectName>json</outputObjectName>
-        <requiredForUpsert>false</requiredForUpsert>
-        <upsertKey>false</upsertKey>
-    </omniDataTransformItem>
-    <omniDataTransformItem>
-        <disabled>false</disabled>
-        <filterGroup>0.0</filterGroup>
-        <globalKey>a01a522f-0958-4484-9030-509c2ab43297</globalKey>
-        <inputFieldName>Product:Description</inputFieldName>
-        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
-        <linkedObjectSequence>0.0</linkedObjectSequence>
-        <name>DRExtractGetProductandPrice</name>
-        <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>ProductDetails:Description</outputFieldName>
-        <outputObjectName>json</outputObjectName>
-        <requiredForUpsert>false</requiredForUpsert>
-        <transformValuesMappings>{ }</transformValuesMappings>
-        <upsertKey>false</upsertKey>
-    </omniDataTransformItem>
-    <omniDataTransformItem>
-        <disabled>false</disabled>
-        <filterGroup>0.0</filterGroup>
-        <globalKey>017f95b1-5b1d-4427-9593-a453eca9c001</globalKey>
-        <inputFieldName>Image:Id</inputFieldName>
-        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
-        <linkedObjectSequence>0.0</linkedObjectSequence>
-        <name>DRExtractGetProductandPrice</name>
-        <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>Image:Id</outputFieldName>
-        <outputObjectName>json</outputObjectName>
-        <requiredForUpsert>false</requiredForUpsert>
-        <transformValuesMappings>{ }</transformValuesMappings>
-        <upsertKey>false</upsertKey>
-    </omniDataTransformItem>
-    <omniDataTransformItem>
-        <disabled>false</disabled>
-        <filterGroup>0.0</filterGroup>
-        <globalKey>4e49cabf-6b33-48f5-b198-18c47de08ca8</globalKey>
-        <inputFieldName>Product:ProductCode</inputFieldName>
-        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
-        <linkedObjectSequence>0.0</linkedObjectSequence>
-        <name>DRExtractGetProductandPrice</name>
-        <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>ProductDetails:ProductCode</outputFieldName>
-        <outputObjectName>json</outputObjectName>
-        <requiredForUpsert>false</requiredForUpsert>
-        <transformValuesMappings>{ }</transformValuesMappings>
-        <upsertKey>false</upsertKey>
-    </omniDataTransformItem>
-    <omniDataTransformItem>
-        <disabled>false</disabled>
-        <filterGroup>0.0</filterGroup>
-        <globalKey>22bec398-8673-4bb8-8bad-27b6e951b666</globalKey>
-        <inputFieldName>Product:Family</inputFieldName>
-        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
-        <linkedObjectSequence>0.0</linkedObjectSequence>
-        <name>DRExtractGetProductandPrice</name>
-        <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>ProductDetails:ProductFamily</outputFieldName>
-        <outputObjectName>json</outputObjectName>
-        <requiredForUpsert>false</requiredForUpsert>
-        <transformValuesMappings>{ }</transformValuesMappings>
-        <upsertKey>false</upsertKey>
-    </omniDataTransformItem>
-    <omniDataTransformItem>
-        <disabled>false</disabled>
-        <filterGroup>0.0</filterGroup>
-        <globalKey>8121ff97-1239-4524-9705-89d23fcdc1d1</globalKey>
-        <inputFieldName>Price:UnitPrice</inputFieldName>
-        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
-        <linkedObjectSequence>0.0</linkedObjectSequence>
-        <name>DRExtractGetProductandPrice</name>
-        <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>ProductDetails:Price</outputFieldName>
-        <outputObjectName>json</outputObjectName>
-        <requiredForUpsert>false</requiredForUpsert>
-        <transformValuesMappings>{ }</transformValuesMappings>
-        <upsertKey>false</upsertKey>
-    </omniDataTransformItem>
-    <omniDataTransformItem>
-        <disabled>false</disabled>
-        <filterGroup>0.0</filterGroup>
-        <globalKey>cc137c65-2a94-4c4c-8a5c-b214a2eed824</globalKey>
-        <inputFieldName>Product:Name</inputFieldName>
-        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
-        <linkedObjectSequence>0.0</linkedObjectSequence>
-        <name>DRExtractGetProductandPrice</name>
-        <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>ProductDetails:Name</outputFieldName>
-        <outputObjectName>json</outputObjectName>
-        <requiredForUpsert>false</requiredForUpsert>
-        <transformValuesMappings>{ }</transformValuesMappings>
-        <upsertKey>false</upsertKey>
-    </omniDataTransformItem>
-    <omniDataTransformItem>
-        <disabled>false</disabled>
-        <filterGroup>0.0</filterGroup>
-        <filterOperator>=</filterOperator>
-        <filterValue>Attachment:ContentDocumentId</filterValue>
-        <globalKey>39e143f4-385f-4b03-ac0e-cf741ef31584</globalKey>
-        <inputFieldName>ContentDocumentId</inputFieldName>
-        <inputObjectName>ContentVersion</inputObjectName>
-        <inputObjectQuerySequence>4.0</inputObjectQuerySequence>
-        <linkedObjectSequence>0.0</linkedObjectSequence>
-        <name>DRExtractGetProductandPrice</name>
-        <outputCreationSequence>0.0</outputCreationSequence>
-        <outputFieldName>Image</outputFieldName>
-        <outputObjectName>json</outputObjectName>
-        <requiredForUpsert>false</requiredForUpsert>
-        <upsertKey>false</upsertKey>
-    </omniDataTransformItem>
-    <omniDataTransformItem>
-        <disabled>false</disabled>
-        <filterGroup>0.0</filterGroup>
-        <filterOperator>=</filterOperator>
-        <filterValue>ProductId</filterValue>
-        <globalKey>625ab0e0-93e3-412c-a106-b52f194560cf</globalKey>
-        <inputFieldName>Id</inputFieldName>
-        <inputObjectName>Product2</inputObjectName>
+        <filterOperator>LIMIT</filterOperator>
+        <filterValue>1</filterValue>
+        <globalKey>3b75ca5c-6824-46b5-8c5c-0bc7c3347f6f</globalKey>
+        <inputObjectName>Account</inputObjectName>
         <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
         <linkedObjectSequence>0.0</linkedObjectSequence>
-        <name>DRExtractGetProductandPrice</name>
+        <name>getAccDetailsExtract</name>
         <outputCreationSequence>0.0</outputCreationSequence>
-        <outputFieldName>Product</outputFieldName>
+        <outputFieldName>AccountSearch</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>2261d995-2111-46ab-971a-18f3141e9f10</globalKey>
+        <inputFieldName>AccountSearch:AnnualRevenue</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>getAccDetailsExtract</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Currency</outputFieldFormat>
+        <outputFieldName>AccInfoDetails:AccInfo:Accrevenue</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f184429c-465d-47f8-96ed-65e23c72e5f9</globalKey>
+        <inputFieldName>AccountSearch:FullAddress</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>getAccDetailsExtract</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AccInfoDetails:AccInfo:BillingAddress</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>15721138-a1be-4020-9b34-bd2bbac81c7f</globalKey>
+        <inputFieldName>AccountSearch:BillingCity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>getAccDetailsExtract</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AccInfoDetails:AccInfo:AccBillingCity</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>53358ab5-df17-42ae-ba7c-937627d7013b</globalKey>
+        <inputFieldName>AccountSearch:NumberOfEmployees</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>getAccDetailsExtract</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AccInfoDetails:AccInfo:AccEmp</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>9bf31427-1aa2-491c-ae66-7eebdc8d6b2f</globalKey>
+        <inputFieldName>AccountSearch:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>getAccDetailsExtract</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AccInfoDetails:AccInfo:AccName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>LIKE</filterOperator>
+        <filterValue>AccountSearchName</filterValue>
+        <globalKey>bed5ebf6-ad3e-4b4e-8d93-b3bb0e4fcd68</globalKey>
+        <inputFieldName>Name</inputFieldName>
+        <inputObjectName>Account</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>getAccDetailsExtract</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>AccountSearch</outputFieldName>
         <outputObjectName>json</outputObjectName>
         <requiredForUpsert>false</requiredForUpsert>
         <upsertKey>false</upsertKey>
     </omniDataTransformItem>
     <outputType>JSON</outputType>
     <previewJsonData>{
-  &quot;ProductId&quot; : &quot;01tf6000002nry5AAA&quot;
+  &quot;AccountSearchName&quot; : &quot;g&quot;
 }</previewJsonData>
     <processSuperBulk>false</processSuperBulk>
-    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <responseCacheTtlMinutes>1.0</responseCacheTtlMinutes>
     <rollbackOnError>false</rollbackOnError>
-    <sourceObject>json</sourceObject>
     <sourceObjectDefault>false</sourceObjectDefault>
     <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
     <type>Extract</type>
-    <uniqueName>DRExtractGetProductandPrice_1</uniqueName>
+    <uniqueName>getAccDetailsExtract_1</uniqueName>
     <versionNumber>1.0</versionNumber>
     <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
 </OmniDataTransform>

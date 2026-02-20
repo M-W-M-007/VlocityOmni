@@ -7,19 +7,19 @@
     <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
     <inputType>JSON</inputType>
     <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
-    <name>turboFetchCity</name>
+    <name>getAccDetailsTurbo</name>
     <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
     <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
-        <globalKey>a27cd765-f628-484c-9344-3c9074ab8915</globalKey>
-        <inputFieldName>LastName</inputFieldName>
-        <inputObjectName>Contact</inputObjectName>
+        <globalKey>997d1c8c-49ec-42da-8281-b123292c33e6</globalKey>
+        <inputFieldName>Name</inputFieldName>
+        <inputObjectName>Account</inputObjectName>
         <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
         <linkedObjectSequence>0.0</linkedObjectSequence>
-        <name>turboFetchCity</name>
+        <name>getAccDetailsTurbo</name>
         <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>FetchCity</outputFieldName>
+        <outputFieldName>AccDetails</outputFieldName>
         <outputObjectName>Turbo Extract</outputObjectName>
         <requiredForUpsert>false</requiredForUpsert>
         <upsertKey>false</upsertKey>
@@ -27,14 +27,29 @@
     <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
-        <globalKey>7ed970a6-acac-48b2-8e6e-ea92ea6049f4</globalKey>
-        <inputFieldName>FirstName</inputFieldName>
-        <inputObjectName>Contact</inputObjectName>
+        <globalKey>159d0f1a-ac82-4ef7-9275-6f23959457d4</globalKey>
+        <inputFieldName>BillingAddress</inputFieldName>
+        <inputObjectName>Account</inputObjectName>
         <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
         <linkedObjectSequence>0.0</linkedObjectSequence>
-        <name>turboFetchCity</name>
+        <name>getAccDetailsTurbo</name>
         <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>FetchCity</outputFieldName>
+        <outputFieldName>AccDetails</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>54f72d82-a9c8-4d73-a218-ed6011dfb4a7</globalKey>
+        <inputFieldName>BillingCity</inputFieldName>
+        <inputObjectName>Account</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>getAccDetailsTurbo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AccDetails</outputFieldName>
         <outputObjectName>Turbo Extract</outputObjectName>
         <requiredForUpsert>false</requiredForUpsert>
         <upsertKey>false</upsertKey>
@@ -44,15 +59,15 @@
         <filterDataType>STRING</filterDataType>
         <filterGroup>0.0</filterGroup>
         <filterOperator>=</filterOperator>
-        <filterValue>ContactCity</filterValue>
-        <globalKey>475f7b22-0ab8-406b-a8ef-4c2e4a6326cc</globalKey>
-        <inputFieldName>MailingCity</inputFieldName>
-        <inputObjectName>Contact</inputObjectName>
+        <filterValue>AccName</filterValue>
+        <globalKey>c214c555-d42b-4616-b3ea-d20b7262bf20</globalKey>
+        <inputFieldName>Name</inputFieldName>
+        <inputObjectName>Account</inputObjectName>
         <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
         <linkedObjectSequence>0.0</linkedObjectSequence>
-        <name>turboFetchCity</name>
+        <name>getAccDetailsTurbo</name>
         <outputCreationSequence>0.0</outputCreationSequence>
-        <outputFieldName>FetchCity</outputFieldName>
+        <outputFieldName>AccDetails</outputFieldName>
         <outputObjectName>Turbo Extract</outputObjectName>
         <requiredForUpsert>false</requiredForUpsert>
         <upsertKey>false</upsertKey>
@@ -60,14 +75,14 @@
     <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
-        <globalKey>5cb8a732-3bc4-4b34-8743-5960164e21f8</globalKey>
-        <inputFieldName>MailingCity</inputFieldName>
-        <inputObjectName>Contact</inputObjectName>
+        <globalKey>9cb7d6f3-da9b-4139-86b6-f144ad9856df</globalKey>
+        <inputFieldName>NumberOfEmployees</inputFieldName>
+        <inputObjectName>Account</inputObjectName>
         <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
         <linkedObjectSequence>0.0</linkedObjectSequence>
-        <name>turboFetchCity</name>
+        <name>getAccDetailsTurbo</name>
         <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>FetchCity</outputFieldName>
+        <outputFieldName>AccDetails</outputFieldName>
         <outputObjectName>Turbo Extract</outputObjectName>
         <requiredForUpsert>false</requiredForUpsert>
         <upsertKey>false</upsertKey>
@@ -75,21 +90,21 @@
     <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
-        <globalKey>bd0afd79-5892-4955-81f3-356d440e6ef8</globalKey>
-        <inputFieldName>AccountId</inputFieldName>
-        <inputObjectName>Contact</inputObjectName>
+        <globalKey>1924e956-72a8-4ecc-b4b2-4f81a86139f3</globalKey>
+        <inputFieldName>AnnualRevenue</inputFieldName>
+        <inputObjectName>Account</inputObjectName>
         <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
         <linkedObjectSequence>0.0</linkedObjectSequence>
-        <name>turboFetchCity</name>
+        <name>getAccDetailsTurbo</name>
         <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>FetchCity</outputFieldName>
+        <outputFieldName>AccDetails</outputFieldName>
         <outputObjectName>Turbo Extract</outputObjectName>
         <requiredForUpsert>false</requiredForUpsert>
         <upsertKey>false</upsertKey>
     </omniDataTransformItem>
     <outputType>JSON</outputType>
     <previewJsonData>{
-  &quot;ContactCity&quot; : &quot;New York City&quot;
+  &quot;AccName&quot; : &quot;Acme&quot;
 }</previewJsonData>
     <processSuperBulk>false</processSuperBulk>
     <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
@@ -97,7 +112,7 @@
     <sourceObjectDefault>false</sourceObjectDefault>
     <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
     <type>Turbo Extract</type>
-    <uniqueName>turboFetchCity_1</uniqueName>
+    <uniqueName>getAccDetailsTurbo_1</uniqueName>
     <versionNumber>1.0</versionNumber>
     <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
 </OmniDataTransform>

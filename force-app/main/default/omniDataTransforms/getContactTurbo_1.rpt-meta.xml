@@ -11,9 +11,27 @@
     <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
     <omniDataTransformItem>
         <disabled>false</disabled>
+        <filterDataType>STRING</filterDataType>
         <filterGroup>0.0</filterGroup>
-        <globalKey>fbbfe5ea-f914-4ab1-9592-c1000a416bf1</globalKey>
-        <inputFieldName>LastName</inputFieldName>
+        <filterOperator>=</filterOperator>
+        <filterValue>ContactName</filterValue>
+        <globalKey>290cda4a-e35a-4bc8-9455-ebf382273825</globalKey>
+        <inputFieldName>Name</inputFieldName>
+        <inputObjectName>Contact</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>getContactTurbo</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>OtherDetails</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>add0e4ae-71a7-4e0f-8d77-6788a3095a3f</globalKey>
+        <inputFieldName>OtherPostalCode</inputFieldName>
         <inputObjectName>Contact</inputObjectName>
         <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
         <linkedObjectSequence>0.0</linkedObjectSequence>
@@ -27,8 +45,23 @@
     <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
-        <globalKey>47d45fd3-4c71-4ba5-b125-9264cc3f68ae</globalKey>
-        <inputFieldName>OtherStreet</inputFieldName>
+        <globalKey>97bbc2a1-d467-4612-9ae2-8dfa6b20cde9</globalKey>
+        <inputFieldName>OtherCity</inputFieldName>
+        <inputObjectName>Contact</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>getContactTurbo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>OtherDetails</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>fbbfe5ea-f914-4ab1-9592-c1000a416bf1</globalKey>
+        <inputFieldName>LastName</inputFieldName>
         <inputObjectName>Contact</inputObjectName>
         <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
         <linkedObjectSequence>0.0</linkedObjectSequence>
@@ -57,8 +90,8 @@
     <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
-        <globalKey>6a54f116-4603-467c-948e-de8737c40b7d</globalKey>
-        <inputFieldName>OtherState</inputFieldName>
+        <globalKey>47d45fd3-4c71-4ba5-b125-9264cc3f68ae</globalKey>
+        <inputFieldName>OtherStreet</inputFieldName>
         <inputObjectName>Contact</inputObjectName>
         <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
         <linkedObjectSequence>0.0</linkedObjectSequence>
@@ -87,41 +120,8 @@
     <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
-        <globalKey>add0e4ae-71a7-4e0f-8d77-6788a3095a3f</globalKey>
-        <inputFieldName>OtherPostalCode</inputFieldName>
-        <inputObjectName>Contact</inputObjectName>
-        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
-        <linkedObjectSequence>0.0</linkedObjectSequence>
-        <name>getContactTurbo</name>
-        <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>OtherDetails</outputFieldName>
-        <outputObjectName>Turbo Extract</outputObjectName>
-        <requiredForUpsert>false</requiredForUpsert>
-        <upsertKey>false</upsertKey>
-    </omniDataTransformItem>
-    <omniDataTransformItem>
-        <disabled>false</disabled>
-        <filterDataType>STRING</filterDataType>
-        <filterGroup>0.0</filterGroup>
-        <filterOperator>=</filterOperator>
-        <filterValue>ContactName</filterValue>
-        <globalKey>290cda4a-e35a-4bc8-9455-ebf382273825</globalKey>
-        <inputFieldName>Name</inputFieldName>
-        <inputObjectName>Contact</inputObjectName>
-        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
-        <linkedObjectSequence>0.0</linkedObjectSequence>
-        <name>getContactTurbo</name>
-        <outputCreationSequence>0.0</outputCreationSequence>
-        <outputFieldName>OtherDetails</outputFieldName>
-        <outputObjectName>Turbo Extract</outputObjectName>
-        <requiredForUpsert>false</requiredForUpsert>
-        <upsertKey>false</upsertKey>
-    </omniDataTransformItem>
-    <omniDataTransformItem>
-        <disabled>false</disabled>
-        <filterGroup>0.0</filterGroup>
-        <globalKey>97bbc2a1-d467-4612-9ae2-8dfa6b20cde9</globalKey>
-        <inputFieldName>OtherCity</inputFieldName>
+        <globalKey>6a54f116-4603-467c-948e-de8737c40b7d</globalKey>
+        <inputFieldName>OtherState</inputFieldName>
         <inputObjectName>Contact</inputObjectName>
         <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
         <linkedObjectSequence>0.0</linkedObjectSequence>
