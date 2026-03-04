@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedOutputJson>{
+  &quot;omniscriptId&quot; : &quot;0jNWs000000qizRMAQ&quot;,
+  &quot;language&quot; : &quot;English&quot;,
+  &quot;type&quot; : &quot;EmailAction&quot;,
+  &quot;subType&quot; : &quot;RemoteAction&quot;,
+  &quot;sId&quot; : &quot;0jNWs000000qizRMAQ&quot;,
+  &quot;runMode&quot; : &quot;preview&quot;,
+  &quot;theme&quot; : &quot;lightning&quot;,
+  &quot;LanguageCode&quot; : &quot;en_US&quot;,
+  &quot;userProfile&quot; : &quot;System Administrator&quot;,
+  &quot;timeStamp&quot; : &quot;2026-02-16T14:25:53.181Z&quot;,
+  &quot;userTimeZoneName&quot; : &quot;Asia/Kolkata&quot;,
+  &quot;userTimeZone&quot; : &quot;330&quot;,
+  &quot;userCurrencyCode&quot; : &quot;INR&quot;,
+  &quot;userName&quot; : &quot;waz.scibot-xc2e@force.com&quot;,
+  &quot;userId&quot; : &quot;005Ws000009eXPtIAM&quot;,
+  &quot;omniProcessId&quot; : &quot;0jNWs000000qizRMAQ&quot;,
+  &quot;localTimeZoneName&quot; : &quot;Asia/Calcutta&quot;,
+  &quot;GetAccount&quot; : {
+    &quot;AccountSeacrh&quot; : &quot;Acme&quot;
+  },
+  &quot;InfoAccount&quot; : {
+    &quot;Block1&quot; : {
+      &quot;Name&quot; : &quot;Ac NAme&quot;,
+      &quot;BillingCity&quot; : &quot;Ac City&quot;,
+      &quot;AccountType&quot; : &quot;Ac Type&quot;,
+      &quot;Industry&quot; : &quot;ac industry&quot;
+    },
+    &quot;AccountEmployees&quot; : 6778,
+    &quot;AccountRevenue&quot; : 23456,
+    &quot;AccountPhone&quot; : &quot;2345678909&quot;,
+    &quot;DOB&quot; : &quot;1983-12-07&quot;,
+    &quot;AccEmail&quot; : &quot;waz.scibot@gmail.com&quot;,
+    &quot;ContactInfo&quot; : [ {
+      &quot;ContactTitle&quot; : &quot;ceo&quot;,
+      &quot;ContactName&quot; : &quot;conName&quot;,
+      &quot;ContactEmail&quot; : &quot;conemail@gmail.com&quot;,
+      &quot;ContactPhone&quot; : &quot;9876545678&quot;
+    }, {
+      &quot;ContactTitle&quot; : &quot;ceo2&quot;,
+      &quot;ContactName&quot; : &quot;conname2&quot;,
+      &quot;ContactEmail&quot; : &quot;caonemail2@gmail.com&quot;,
+      &quot;ContactPhone&quot; : &quot;9876543456&quot;
+    } ],
+    &quot;CaseInfo&quot; : [ {
+      &quot;CaseSubject&quot; : &quot;Case subject 1&quot;,
+      &quot;CaseNumber&quot; : 76545678,
+      &quot;CaseStatus&quot; : &quot;statuys&quot;,
+      &quot;CaseType&quot; : &quot;utyug&quot;,
+      &quot;CasePriority&quot; : &quot;jkbvh&quot;,
+      &quot;CaseOpenDate&quot; : &quot;2026-02-10T06:30:00.000Z&quot;
+    }, {
+      &quot;CaseSubject&quot; : &quot;Case sub 2&quot;,
+      &quot;CaseNumber&quot; : 876556789,
+      &quot;CaseStatus&quot; : &quot;jhbbjkb&quot;,
+      &quot;CaseType&quot; : &quot;mbkjb&quot;,
+      &quot;CasePriority&quot; : &quot;mjb&quot;,
+      &quot;CaseOpenDate&quot; : &quot;2026-02-05T06:30:00.000Z&quot;
+    } ]
+  }
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>GetAccountAllinfoWithCase</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>08c09475-5717-4d95-b9dd-74decd9d24d6</globalKey>
+        <inputFieldName>AccountSearch:Industry</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetAccountAllinfoWithCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InfoAccount:Block1:Industry</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>a943d1e5-ec33-4b32-b26d-1cd4b91dde64</globalKey>
+        <inputFieldName>AccountSearch:AnnualRevenue</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetAccountAllinfoWithCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InfoAccount:AccountRevenue</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>b620bc25-d622-4a5d-80d7-7950fa6e8b0b</globalKey>
+        <inputFieldName>Contact:Phone</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetAccountAllinfoWithCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InfoAccount:ContactInfo:ContactPhone</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>0a029e3f-82fa-4898-a100-164a763e7500</globalKey>
+        <inputFieldName>Case:Subject</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetAccountAllinfoWithCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InfoAccount:CaseInfo:CaseSubject</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>fc41821c-2fa2-4acc-9857-ebe472ff7dc3</globalKey>
+        <inputFieldName>Case:Status</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetAccountAllinfoWithCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InfoAccount:CaseInfo:CaseStatus</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ccab8338-716d-4dae-866e-75c8f187166f</globalKey>
+        <inputFieldName>Case:CaseNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetAccountAllinfoWithCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InfoAccount:CaseInfo:CaseNumber</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>1c86f2a0-52ab-40ca-95ef-3477f790fb0d</globalKey>
+        <inputFieldName>AccountSearch:AccEmail</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetAccountAllinfoWithCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InfoAccount:AccEmail</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>cdea3af0-9d1e-43c1-a617-ce0a4c89ea9e</globalKey>
+        <inputFieldName>AccountSearch:Type</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetAccountAllinfoWithCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InfoAccount:Block1:AccountType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>8cf84d42-9535-47b0-b101-3d31de09b8fc</globalKey>
+        <inputFieldName>AccountSearch:Phone</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetAccountAllinfoWithCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Number</outputFieldFormat>
+        <outputFieldName>InfoAccount:AccountPhone</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>b67ad0b8-39e8-43e7-b62e-88e1d2fb7cb7</globalKey>
+        <inputFieldName>AccountSearch:DateOfBirth</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetAccountAllinfoWithCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InfoAccount:DOB</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>d3937886-d1c0-4a03-8655-5f52ffca8a7e</globalKey>
+        <inputFieldName>Case:Type</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetAccountAllinfoWithCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InfoAccount:CaseInfo:CaseType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>66fe9c2f-8255-4e0d-b1c8-606627a7ff69</globalKey>
+        <inputFieldName>Case:Priority</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetAccountAllinfoWithCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InfoAccount:CaseInfo:CasePriority</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>d8be10eb-6992-4980-9dd2-7d85dbe55655</globalKey>
+        <inputFieldName>AccountSearch:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetAccountAllinfoWithCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InfoAccount:Block1:Name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>LIKE</filterOperator>
+        <filterValue>AccName</filterValue>
+        <globalKey>43ba48ec-eecf-4e29-bfb8-21cd442a76b0</globalKey>
+        <inputFieldName>Name</inputFieldName>
+        <inputObjectName>Account</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetAccountAllinfoWithCase</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>AccountSearch</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>77133ddd-3cf0-4122-bb06-d0bb07578675</globalKey>
+        <inputFieldName>AccountSearch:BillingCity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetAccountAllinfoWithCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InfoAccount:Block1:BillingCity</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>4beb361f-eb0a-46fe-bea6-42cffbf9b558</globalKey>
+        <inputFieldName>Case:CreatedDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetAccountAllinfoWithCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InfoAccount:CaseInfo:CaseOpenDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>fe979ef2-60af-42e1-9d99-fd27bd7e792c</globalKey>
+        <inputFieldName>Contact:Title</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetAccountAllinfoWithCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InfoAccount:ContactInfo:ContactTitle</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>73c0bcba-48e2-49e0-abe4-88b7998125a8</globalKey>
+        <inputFieldName>Contact:Email</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetAccountAllinfoWithCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InfoAccount:ContactInfo:ContactEmail</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>AccountSearch:Id</filterValue>
+        <globalKey>53769300-68d3-44d8-9912-03c2ec4e8976</globalKey>
+        <inputFieldName>AccountId</inputFieldName>
+        <inputObjectName>Case</inputObjectName>
+        <inputObjectQuerySequence>3.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetAccountAllinfoWithCase</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Case</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>AccountSearch:Id</filterValue>
+        <globalKey>0be1f1bb-85a5-414f-b9ba-64666d9b309b</globalKey>
+        <inputFieldName>AccountId</inputFieldName>
+        <inputObjectName>Contact</inputObjectName>
+        <inputObjectQuerySequence>2.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetAccountAllinfoWithCase</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Contact</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>1831eaef-8801-44e8-b216-6ee87d793099</globalKey>
+        <inputFieldName>AccountSearch:NumberOfEmployees</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetAccountAllinfoWithCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InfoAccount:AccountEmployees</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>4fa5a845-6bf0-4d99-93d5-dd8aa5648ec0</globalKey>
+        <inputFieldName>Contact:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetAccountAllinfoWithCase</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InfoAccount:ContactInfo:ContactName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;AccName&quot; : &quot;Acme&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Extract</type>
+    <uniqueName>GetAccountAllinfoWithCase_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>
