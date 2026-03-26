@@ -18,13 +18,13 @@
     <fileNotFoundPage>FileNotFound</fileNotFoundPage>
     <genericErrorPage>Exception</genericErrorPage>
     <inMaintenancePage>InMaintenance</inMaintenancePage>
-    <inactiveIndexPage>InMaintenance</inactiveIndexPage>
-    <indexPage>SiteLogin</indexPage>
+    <!-- <inactiveIndexPage>InMaintenance</inactiveIndexPage> -->
+    <!-- <indexPage>SiteLogin</indexPage> -->
     <masterLabel>OmniStudioWebsites</masterLabel>
     <redirectToCustomDomain>true</redirectToCustomDomain>
     <referrerPolicyOriginWhenCrossOrigin>true</referrerPolicyOriginWhenCrossOrigin>
-    <siteAdmin>waz.scibot-btxs@force.com</siteAdmin>
-    <siteGuestRecordDefaultOwner>waz.scibot-btxs@force.com</siteGuestRecordDefaultOwner>
+    <siteAdmin>waz.scibot-uxve@force.com</siteAdmin>
+    <siteGuestRecordDefaultOwner>waz.scibot-uxve@force.com</siteGuestRecordDefaultOwner>
     <siteTemplate>SiteTemplate</siteTemplate>
     <siteType>Visualforce</siteType>
 </CustomSite>

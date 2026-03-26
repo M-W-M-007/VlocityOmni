@@ -24,8 +24,8 @@
     <referrerPolicyOriginWhenCrossOrigin>true</referrerPolicyOriginWhenCrossOrigin>
     <selfRegPage>CommunitiesSelfReg</selfRegPage>
     <serverIsDown>SNA_PDRCJ_sf_default_cdn_OmniWebsitesExperience1</serverIsDown>
-    <siteAdmin>waz.scibot-btxs@force.com</siteAdmin>
-    <siteGuestRecordDefaultOwner>waz.scibot-btxs@force.com</siteGuestRecordDefaultOwner>
+    <siteAdmin>waz.scibot-uxve@force.com</siteAdmin>
+    <siteGuestRecordDefaultOwner>waz.scibot-uxve@force.com</siteGuestRecordDefaultOwner>
     <siteType>ChatterNetwork</siteType>
     <urlPathPrefix>Wazid</urlPathPrefix>
 </CustomSite>

@@ -1,0 +1,21 @@
+<template>
+    <div class="slds-form-element">
+        <label class="slds-form-element__label">
+            
+            <span class="">All Countries</span>
+        </label>
+        <div class="slds-form-element__control">
+            <div class="slds-select_container">
+                <select class="slds-select" 
+                        onchange={selectionChangeHandler}                         
+                        >
+                    <option value="Select">Select</option>
+                    <template for:each={setAllCountries} for:item="option">
+                        <option key={option} class="uiInputSelectOption" value={option}>{option}</option>
+                    </template>
+                </select>
+            </div>
+        </div>
+        
+    </div>
+</template>

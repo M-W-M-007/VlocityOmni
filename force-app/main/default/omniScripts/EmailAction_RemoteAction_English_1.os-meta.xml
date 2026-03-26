@@ -70,7 +70,7 @@
   &quot;controlWidth&quot; : 12,
   &quot;label&quot; : &quot;DataMapperTransformAction1&quot;,
   &quot;ignoreCache&quot; : false,
-  &quot;bundle&quot; : &quot;TransformCasesForEmail&quot;,
+  <!-- &quot;bundle&quot; : &quot;TransformCasesForEmail&quot;, -->
   &quot;remoteTimeout&quot; : 30000,
   &quot;sendJSONPath&quot; : &quot;&quot;,
   &quot;sendJSONNode&quot; : &quot;&quot;,
