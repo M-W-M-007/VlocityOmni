@@ -1,0 +1,19 @@
+{
+  "folders": [
+    {
+      "path": "d:/Vlocity learn Udemy/VlocityLearnUdemy"
+    }
+  ],
+  "settings": {
+    "eslint.workingDirectories": [
+      "d:/Vlocity learn Udemy/VlocityLearnUdemy"
+    ],
+    "eslint.validate": [
+      "javascript",
+      "typescript"
+    ],
+    "eslint.options": {
+      "overrideConfigFile": "d:\\Vlocity learn Udemy\\VlocityLearnUdemy\\.eslintrc.json"
+    }
+  }
+}
